@@ -25,11 +25,19 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  display: grid; 
+  grid-template-columns: 0.6fr 1.4fr 1fr; 
+  grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "NavBar NavBar NavBar"
+    "ItemListContainer ItemListContainer ItemListContainer"
+    "Footer Footer Footer"; 
 }
+ 
 
 h1 {
   font-size: 3.2em;
